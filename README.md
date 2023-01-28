@@ -45,7 +45,7 @@ ufw disable
 执行下面命令，输入1，再输入2048，代表开2G虚拟内存
 
 ```
-curl -L https://raw.githubusercontent.com/spiritLHLS/lxc/main/swap.sh -o swap.sh && chmod +x swap.sh && bash swap.sh
+curl -L https://raw.githubusercontent.com/alonedogboy/lxc/main/swap.sh -o swap.sh && chmod +x swap.sh && bash swap.sh
 ```
 
 实际swap开的虚拟内存应该是实际内存的2倍，也就是开1G是合理的，上面我描述的情况属于超开了
@@ -95,7 +95,7 @@ lxc命令无问题，执行初始化开小鸡，这一步最好放screen中后�
 
 ```
 rm -rf init.sh
-wget https://github.com/spiritLHLS/lxc/raw/main/init.sh
+wget https://github.com/alonedogboy/lxc/raw/main/init.sh
 chmod 777 init.sh
 apt install dos2unix -y
 dos2unix init.sh
@@ -130,7 +130,7 @@ ufw disable
 执行下面命令，输入1，再输入1024，代表开1G虚拟内存
 
 ```bash
-curl -L https://raw.githubusercontent.com/spiritLHLS/lxc/main/swap.sh -o swap.sh && chmod +x swap.sh && bash swap.sh
+curl -L https://raw.githubusercontent.com/alonedogboy/lxc/main/swap.sh -o swap.sh && chmod +x swap.sh && bash swap.sh
 ```
 
 实际swap开的虚拟内存应该是实际内存的2倍，也就是开1G是合理的，再多就超开了
@@ -180,7 +180,7 @@ lxc命令无问题，执行初始化开小鸡，这一步最好放screen中后�
 
 ```
 rm -rf least.sh
-wget https://github.com/spiritLHLS/lxc/raw/main/least.sh
+wget https://github.com/alonedogboy/lxc/raw/main/least.sh
 chmod 777 least.sh
 apt install dos2unix -y
 dos2unix least.sh
@@ -282,7 +282,7 @@ lxc exec 服务器名字 /bin/bash
 下载文件
 
 ```bash
-curl -L https://raw.githubusercontent.com/spiritLHLS/lxc/main/lxdinstall.sh -o lxdinstall.sh && chmod +x lxdinstall.sh
+curl -L https://raw.githubusercontent.com/alonedogboy/lxc/main/lxdinstall.sh -o lxdinstall.sh && chmod +x lxdinstall.sh
 ```
 
 设置母鸡内存虚拟化大小以及资源池硬盘大小
@@ -294,7 +294,7 @@ curl -L https://raw.githubusercontent.com/spiritLHLS/lxc/main/lxdinstall.sh -o l
 一键安装开lxd母鸡所需要的带vnstat环境的常用预配置环境
 
 ```
-curl -L https://raw.githubusercontent.com/spiritLHLS/lxc/main/backend.sh -o backend.sh && chmod +x backend.sh && bash backend.sh
+curl -L https://raw.githubusercontent.com/alonedogboy/lxc/main/backend.sh -o backend.sh && chmod +x backend.sh && bash backend.sh
 ```
 
 #### 只开一个NAT服务器
@@ -303,7 +303,7 @@ curl -L https://raw.githubusercontent.com/spiritLHLS/lxc/main/backend.sh -o back
 
 ```
 rm -rf buildone.sh
-wget https://github.com/spiritLHLS/lxc/raw/main/buildone.sh
+wget https://github.com/alonedogboy/lxc/raw/main/buildone.sh
 chmod 777 buildone.sh
 apt install dos2unix -y
 dos2unix buildone.sh
